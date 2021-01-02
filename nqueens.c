@@ -112,17 +112,6 @@ void popGenerator(queens* pop[], int n){
   }
 }
 
-int rand_lim(int limit) {
-    int divisor = RAND_MAX/(limit+1);
-    int retval;
-
-    do { 
-        retval = rand() / divisor;
-    } while (retval > limit);
-
-    return retval;
-}
-
 double randDouble(){
   return (rand()/(double)RAND_MAX);
 }
